@@ -118,10 +118,10 @@ Baby.prototype.play = function(){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window/Global Object Binding - By default (unless in strict mode) or when in the global scope, `this` refers to the window/console object.(in strict mode, it will be undefined).
+  2. Implicit Binding - for objects with methods, `this` refers to whatever comes left of the dot when the function is invoked. (most common).
+  3. New Binding - using the `new` keyword constructs a new object and this points to it. In a constructor function, `this` refers to the specific instance of the object that is created and returned by the contructor function.
+  4. Explicit Binding - whenever we use .call/.apply, this will immediately invoke the function. .call passes in arguments one by one, .apply will pass in arguments as an array, .bind pass in arguments one by one, but does not immediately invoke the function. .bind returns a new function that can be invoked later.
 */
 
 
